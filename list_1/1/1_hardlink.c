@@ -1,8 +1,8 @@
 #include <stdio.h>
-#include<unistd.h>
-#include<sys/types.h>
+#include <unistd.h>
+#include <sys/types.h>
+#include <sys/stat.h>
 #include <fcntl.h>
-
 int main() {
     int v = symlink("dest", "destSL");
 
@@ -19,7 +19,6 @@ int main() {
 
     if (e < 0) {
         perror("Failed ");
-    }
-
-    return 0;
-} 
+ }
+return 0;
+}
