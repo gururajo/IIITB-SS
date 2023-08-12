@@ -1,0 +1,13 @@
+ubuntu@ip-172-31-13-137:/proc/6758/fd$ ll
+total 0
+dr-x------ 2 ubuntu ubuntu  0 Aug 12 18:50 ./
+dr-xr-xr-x 9 ubuntu ubuntu  0 Aug 12 18:49 ../
+lrwx------ 1 ubuntu ubuntu 64 Aug 12 18:50 0 -> /dev/pts/3
+lrwx------ 1 ubuntu ubuntu 64 Aug 12 18:50 1 -> /dev/pts/3
+lrwx------ 1 ubuntu ubuntu 64 Aug 12 18:50 2 -> /dev/pts/3
+lrwx------ 1 ubuntu ubuntu 64 Aug 12 18:50 3 -> /home/ubuntu/SS/IIITB-SS/list_1/5/stuff
+lrwx------ 1 ubuntu ubuntu 64 Aug 12 18:50 4 -> /home/ubuntu/SS/IIITB-SS/list_1/5/stuff
+lrwx------ 1 ubuntu ubuntu 64 Aug 12 18:50 5 -> /home/ubuntu/SS/IIITB-SS/list_1/5/stuff
+lrwx------ 1 ubuntu ubuntu 64 Aug 12 18:50 6 -> /home/ubuntu/SS/IIITB-SS/list_1/5/stuff
+lrwx------ 1 ubuntu ubuntu 64 Aug 12 18:50 7 -> /home/ubuntu/SS/IIITB-SS/list_1/5/stuff
+
