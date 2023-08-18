@@ -6,9 +6,9 @@ int main(){
     int reader, writer, i;
     char buf[1024];
     reader  = open("somestuff",O_RDONLY);
-    writer = open("copiedstuff",O_CREAT);
+    writer = open("copiedstuff",O_CREAT|O_WRONLY,666);
     do{
-        i = read(reader,buf,sizeof(buf));
-        if(i) write(writer, buf, i);
+        i = read(reader,&buf,sizeof(buf));
+        if(i) write(writer, &buf, i);
 }while(i);
 }
