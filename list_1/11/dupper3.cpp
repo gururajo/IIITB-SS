@@ -5,7 +5,7 @@ using namespace std;
 int main(){
     int reader, reader1;
     reader = open("somestuff", O_RDWR); 
-    reader1 = dup(reader);
+    reader1 = fcntl(reader,F_DUPFD);
     if(reader<0 ) {
         cout<<"not able to open file";
         return 0;

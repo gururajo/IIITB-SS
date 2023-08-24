@@ -12,7 +12,7 @@ int main(int argc, char **argv){
         return 0;
     }
     write(rdwr,"just writing some stuff",sizeof("just writing some stuff"));
-    cout<<lseek(rdwr, -10, SEEK_CUR);
+    cout<<lseek(rdwr, 10, SEEK_CUR);
     write(rdwr, "this is new stuff",sizeof("this is new stuff"));
     int reader,i, c=0;
     reader = open("somestuff",O_RDONLY);
