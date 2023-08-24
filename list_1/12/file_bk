@@ -1,0 +1,23 @@
+#include<iostream>
+#include<fcntl.h>
+#include<unistd.h>
+using namespace std;
+int main(){
+    int reader, reader1;
+    reader = open("somestuff", O_RDWR | O_CREAT | O_TRUNC | O_APPEND); 
+    cout<<reader<<endl;    
+    cout<<"y"<<fcntl(0,F_GETFD)<<endl;
+    reader1 = fcntl(reader,F_GETFL);
+    cout<<reader1 & (O_RDWR | O_CREAT | O_TRUNC | O_APPEND)<<endl;
+    cout<<reader1<<"  "<<O_RDONLY<<"  "<<O_RDWR<<endl;
+    if(reader<0 ) {
+        cout<<"not able to open file";
+        return 0;
+     }
+    char buf[1024];
+//    int i=    read(reader,&buf,sizeof(buf));
+  //  write(reader,buf,i);
+   // write(reader1,buf,i);
+
+   return 0;
+}

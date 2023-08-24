@@ -5,10 +5,14 @@
 using namespace std;
 int main(){
     int fd[5]; 
-    fd[0]  = open("stuff",O_RDWR|O_EXCL);
-    fd[1]  = open("stuff",O_RDWR|O_EXCL);
-    fd[3]  = open("stuff",O_RDWR|O_EXCL);
-    fd[4]  = open("stuff",O_RDWR|O_EXCL);
-    fd[5]  = open("stuff",O_RDWR|O_EXCL);
+    fd[0]  = open("stuff",O_RDWR| O_CREAT, 0666);
+    fd[1]  = open("stuff",O_RDWR);
+    fd[3]  = open("stuff",O_RDWR);
+    fd[4]  = open("stuff",O_RDWR);
+    fd[2]  = open("stuff",O_RDWR);
+    cout<<"created all"<<endl;
+    for(int i=0;i<5;i++)
+        cout<<fd[i]<<"  ,";
     while(1);
+//int i;cin>>i;
 }
