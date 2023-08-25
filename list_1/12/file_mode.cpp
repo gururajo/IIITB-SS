@@ -8,7 +8,7 @@ int main(){
 //    cout<<reader<<endl;
     int ret = fcntl(reader,F_GETFL);
     cout<<ret<<endl;
-    if(!(ret  & O_RDONLY))
+    if((ret  & O_RDONLY))
     {   cout<<"behenchod\n";}
     else
         cout<<"shiiit\n";
