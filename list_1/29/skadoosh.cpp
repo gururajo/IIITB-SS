@@ -1,4 +1,11 @@
-#include<iostream>
+/*Name : skadoosh.cpp
+Author : Gururaj Otageri
+Description :
+Write a program to get scheduling policy and modify the scheduling policy (SCHED_FIFO,
+SCHED_RR).
+Date: 2nd sept, 2023.
+*/
+include<iostream>
 #include<fcntl.h>
 #include <unistd.h>
 #include <sys/time.h>

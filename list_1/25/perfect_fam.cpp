@@ -1,6 +1,8 @@
-/*Name : orphanage.cpp
+/*Name : perfect_fam.cpp
 Author : Gururaj Otageri
-Description :Write a program to create an orphan process.
+Description :
+Write a program to create three child processes. The parent should wait for a particular child (use
+waitpid system call)
 Date: 2nd sept, 2023.
 */
 #include<iostream>

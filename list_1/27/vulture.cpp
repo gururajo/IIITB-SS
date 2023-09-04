@@ -1,3 +1,13 @@
+/*Name : vulture.cpp
+Author : Gururaj Otageri
+Description :
+Write a program to execute ls -Rl by the following system calls
+a. execl
+b. execlp
+c. execled. execv
+e. execvp
+Date: 2nd sept, 2023.
+*/
 #include<iostream>
 #include<fcntl.h>
 #include <unistd.h>

@@ -1,4 +1,10 @@
-#include<iostream>
+/*Name : ghost.cpp
+Author : Gururaj Otageri
+Description :
+     Write a program to run a script at a specific time using a Daemon process.
+Date: 2nd sept, 2023.
+*/
+include<iostream>
 #include<fcntl.h>
 #include <unistd.h>
 #include <sys/time.h>
@@ -26,8 +32,9 @@ int main(){
         then = mktime(when);
         cout<<"\nsdleeping :"<<then-now<<endl;
         sleep(then-now);
-        while(0){
-            sprintf(a,"wassup?:%d\n",c);
+        while(1){
+            time(&now);
+            sprintf(a,"wassup?:%ld\n",now);
             write(fd, a,strlen(a));
             cout<<"wrote "<<c<<endl;
             c++;
