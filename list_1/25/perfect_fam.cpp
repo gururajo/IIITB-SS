@@ -14,19 +14,21 @@ Date: 2nd sept, 2023.
 using namespace std;
 int main(){
     if(fork()){
-        cout<<"oops pregnant again...\n";
-        int lastborn;
-        if(lastborn = fork()){
-            sleep(10);
-            cout<<"Delivery successfull.. its a girl\nwaiting for the lastborn to terminate\n";
-            int waitstatus;
-            waitpid(lastborn, &waitstatus,0);
-            cout<<"lastborn no more!!\n";           
-        }
-        else{
-            cout<<"i know i am an accident\n";
-            sleep(20);
-        }
+      if(fork()){
+          cout<<"oops pregnant again...\n";
+          int lastborn;
+          if(lastborn = fork()){
+              sleep(10);
+              cout<<"Delivery successfull.. its a girl\nwaiting for the lastborn to terminate\n";
+              int waitstatus;
+              waitpid(lastborn, &waitstatus,0);
+              cout<<"lastborn no more!!\n";           
+          }
+          else{
+              cout<<"i know i am an accident\n";
+              sleep(20);
+          }
+       }      
     }
     else{
         cout<<"hehe i was planned \n";
