@@ -6,6 +6,7 @@ int main(){
     int r, w ;
     struct flock rflock, wflock;
     r = open("stuff",O_RDWR|O_CREAT, 0666);
+    cin>>w;
     rflock.l_type = F_RDLCK;
     rflock.l_whence = SEEK_SET;
     rflock.l_start = 0;

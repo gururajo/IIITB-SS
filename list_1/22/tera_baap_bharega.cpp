@@ -12,7 +12,7 @@ Date: 2nd sept, 2023.
 using namespace std;
 int main(){
     int fd  = open("bijli",O_WRONLY|O_CREAT, 0666);
-    lseek(fd,0,SEEK_END);
+//    lseek(fd,0,SEEK_END);
     if(fork()){
         cout<<"Imma parent writing to file\n";
         write(fd, "Imma parent writing to file\n",sizeof("Imma parent writing to file\n"));
